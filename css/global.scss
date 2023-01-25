@@ -1,0 +1,107 @@
+@import '../fonts/fonts.css';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'montserrat';
+    font-weight: 400;
+}
+body{
+    background: #FAFAFA;
+}
+.subtitle{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    color: #0A9695;
+    margin-bottom: 10px;
+}
+.title{
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 130%;
+    text-align: center;
+    color: #464646;
+}
+.header{
+    background: rgba(26, 26, 26, 0.3);
+    width: 100%;
+    height: 70px;
+    padding: 0 20px;
+    position: fixed;
+    z-index: 2;
+    &__nav{
+        gap: 50px;
+        a{
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 15px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            padding-bottom: 25px;
+            &:hover{
+                border-bottom: 2px solid #FFFFFF;
+            }
+        }
+    }
+    &__buttons{
+        gap: 35px;
+        &--phone{
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 17px;
+            color: #FFFFFF;
+        }
+        &--btn{
+            background: #0A9695;
+            border-radius: 3px;
+            width: 150px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+            color: #FFFFFF;
+        }
+    }
+    &__burger{
+        span{
+            width: 40px;
+            height: 2px;
+            background: #FFFFFF;
+            position: relative;
+            &::after{
+                width: 40px;
+                height: 2px;
+                background: #FFFFFF;
+                position: absolute;
+                top: -10px;
+                content: '';
+            }
+            &::before{
+                width: 40px;
+                height: 2px;
+                background: #FFFFFF;
+                position: absolute;
+                top: 10px;
+                content: '';
+            }
+        }
+    }
+}
+.footer{
+    &__link{
+        svg{
+            fill: #7A7A7A;
+            &:hover{
+                fill: #0A9695;
+            }
+        }
+    }
+}
